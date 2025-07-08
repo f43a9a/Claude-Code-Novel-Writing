@@ -1,8 +1,8 @@
 # Site settings
 title: "Claude Codeに書いてもらった小説作品集"
 description: "Claude Codeに書いてもらった小説作品集"
-baseurl: "/plot-system"
-url: "https://yourusername.github.io"
+baseurl: "/Claude-Code-Novel-Writing"
+url: "https://f43a9a.github.io"
 
 # Build settings
 markdown: kramdown
