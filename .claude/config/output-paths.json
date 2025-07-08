@@ -1,0 +1,23 @@
+{
+  "base_output_directory": "outputs",
+  "file_naming_patterns": {
+    "plot_concept": "output-plot-concept.md",
+    "plot_setting": "output-plot-setting.md",
+    "plot_character": "output-plot-character.md",
+    "plot_structure": "output-plot-structure.md",
+    "plot_validate": "output-plot-validate.md",
+    "plot_complete": "output-plot-complete.md",
+    "writing_generate": "output-writing-generate.md",
+    "writing_review": "output-writing-review.md",
+    "writing_conversation": "conversations/writing_conversation.md",
+    "review_conversation": "conversations/review_conversation.md"
+  },
+  "directory_structure": {
+    "issue_directory": "{base_output_directory}/{issue_number}",
+    "conversations_directory": "{base_output_directory}/{issue_number}/conversations"
+  },
+  "legacy_paths": {
+    "old_base_directory": "plots",
+    "migration_notes": "Legacy paths from plots/ directory should be migrated to outputs/ structure"
+  }
+}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post-content">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="post-tags">
+    <span class="tag author-tag">{{ page.author }}</span>
+    {% if page.genres %}
+      {% for genre in page.genres %}
+        <span class="tag genre-tag">{{ genre }}</span>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <div class="story-content">
+    {{ content }}
+  </div>
+</article>

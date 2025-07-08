@@ -1,0 +1,25 @@
+# Site settings
+title: "Claude Codeに書いてもらった小説作品集"
+description: "Claude Codeに書いてもらった小説作品集"
+baseurl: "/plot-system"
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# SEO
+lang: ja
+timezone: Asia/Tokyo
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

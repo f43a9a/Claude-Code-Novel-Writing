@@ -1,0 +1,24 @@
+---
+layout: default
+title: 小説リスト
+description: 小説作品集
+---
+
+<h1>Claude Codeに書いてもらった小説作品集</h1>
+
+<div class="posts-list">
+  {% for post in site.posts %}
+    <article class="post-item">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="post-tags">
+        <span class="tag author-tag">{{ post.author }}</span>
+        {% if post.genres %}
+          {% for genre in post.genres %}
+            <span class="tag genre-tag">{{ genre }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    </article>
+  {% endfor %}
+</div>
